@@ -5,6 +5,7 @@ jobs:
       - image: circleci/php:5.6-cli-node-browsers
     steps:
       - checkout
+      - run: git clone git@github.com:TinkLabs/DevOps.git ~/DevOps
       - run: echo "hello world"
   test:
     docker:
