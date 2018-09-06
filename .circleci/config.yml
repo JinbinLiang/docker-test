@@ -2,20 +2,20 @@ version: 2
 jobs:
   build:
     docker:
-#      - image: circleci/php:5.6-cli-node-browsers
+      - image: circleci/php:5.6-cli-node-browsers
     steps:
       - checkout
 #      - run: git clone git@github.com:TinkLabs/DevOps.git ~/DevOps
       - run: echo "hello world"
   test:
     docker:
-#      - image: circleci/php:5.6-cli-node-browsers
+      - image: circleci/php:5.6-cli-node-browsers
     steps:
       - checkout
       - run: echo "Test me"
   deploy:
     docker:
-#      - image: circleci/php:5.6-cli-node-browsers
+      - image: circleci/php:5.6-cli-node-browsers
     steps:
       - checkout
       - run: echo "Deploy me"
